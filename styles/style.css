@@ -1,0 +1,148 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+:root {
+  /*sets the deafaut site colors*/
+  --bgcolor: black;
+  --defcolor: white;
+  --lightbgcolor: rgb(10, 20, 40);
+  --lightdefcolor: gray;
+  --accentcolor: darkorchid;
+  --specialaccentcolor: hotpink;
+  --linkcolor: violet; 
+  --visitedlinkcolor: lightgreen;
+  /*sets basic site layout*/
+  --sitewidth: 1080px;
+}
+@media (prefers-color-scheme: light) {
+    :root {
+      /*sets light mode color scheme*/
+      --bgcolor: white;
+      --defcolor: black;
+      --lightbgcolor: rgb(250,220,250);
+      --lightdefcolor: dimgray; 
+      --accentcolor: magenta;
+      --specialaccentcolor: deeppink;
+      --linkcolor: fuchsia; 
+      --visitedlinkcolor: lime;
+}
+}
+/*the following clusterfuck styles my main site*/
+#sitecontent {
+  box-sizing: border-box;
+  background-color: var(--lightbgcolor);
+  max-width: var(--sitewidth);
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-color: var(--bgcolor);
+  color: var(--defcolor);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  color: var(--accentcolor);
+  text-align: center;
+
+  margin-bottom: 5px ;
+}
+p {
+  font-size: 28px;
+  margin: 12px 0px;
+}
+dt {
+  font-size: 28px;
+  margin: 0px;
+}
+dl {
+  margin: 8px 28px;
+  font-size: 24px;
+  text-align: justify;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 12px 0px;
+}
+h3 {
+  font-size: 30px;
+  margin: 8px 0px;
+}
+.title {
+  padding: 1%;
+  margin: 0px;
+  font-size: 380%;
+  font-size:calc(400% - 10px);
+  font-family: monospace;
+  font-weight: 900;
+  border: 5px var(--specialaccentcolor) solid;
+  border-radius: 1em;
+}
+.subtext {
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--lightdefcolor);
+  padding: px;
+}
+
+a:link {
+  color: var(--linkcolor);
+}
+
+a:visited {
+  color: var(--visitedlinkcolor);
+}
+a:hover {
+  text-decoration: dashed;
+}
+footer#sitecontent {
+  margin-top: 28px;
+  background-image: linear-gradient(0deg,var(--bgcolor),var(--lightbgcolor));
+  display: flex;
+  border-top: 5px var(--specialaccentcolor) solid;
+  border-bottom: 5px var(--specialaccentcolor) solid;
+  border-radius: 1em;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.accountbox {
+  align-self: start;
+  width: 50pc;
+}
+.sourcebox {
+  width: 50pc;
+}
+/*this will style my not found page*/
+.contentmissingbox {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.contentmissing {
+  color: var(--defcolor);
+  padding: 12px;
+  max-width: 540px;
+  max-height: 209px;
+  text-align: justify;
+  border: 5px var(--accentcolor) solid;
+  border-radius: 1em;
+  overflow: auto;
+  
+}
+.contentmissingheader  {
+  margin: 0px auto 12px auto;
+  font-size: 60px;
+  text-align: center;
+}
+.contentmissinginfotext {
+  margin: 0px;
+  font-size: 28.5px;
+}
