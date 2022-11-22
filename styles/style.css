@@ -74,12 +74,16 @@ h3 {
   margin: 8px 0px;
 }
 .title {
-  padding: 1%;
+  /*this is a fallback option to semi correctly center the text with it's shadow*/
+  padding: 2px 8px 2px 8px;
+  /*this is will perfectly center the text with it's shadow*/
+  padding: 1% calc(1% + 6px) calc(1% + 6px) 1%;
   margin: 0px;
   font-size: 380%;
   font-size:calc(3vw + 20px);
   font-family: monospace;
   font-weight: 900;
+  text-shadow: 2px 2px 0px var(--specialaccentcolor), 4px 4px 0px var(--linkcolor);
   border: 5px var(--specialaccentcolor) solid;
   border-radius: 1em;
 }
