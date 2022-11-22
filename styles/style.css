@@ -80,7 +80,7 @@ h3 {
   padding: 1% calc(1% + 6px) calc(1% + 6px) 1%;
   margin: 0px;
   font-size: 380%;
-  font-size:calc(3vw + 20px);
+  font-size:calc(3vw + 14px);
   font-family: monospace;
   font-weight: 900;
   text-shadow: 2px 2px 0px var(--specialaccentcolor), 4px 4px 0px var(--linkcolor);
